@@ -12,7 +12,7 @@ def main():
     ap.add_argument("--base_model", default="meta-llama/Llama-2-13b-hf")
     ap.add_argument("--lora_dir", required=True)
     ap.add_argument("--in_jsonl", default="data/ft_test.jsonl")
-    ap.add_argument("--out", default="1027_preds_lora_llama2.jsonl")
+    ap.add_argument("--out", default="ft_inference_results/1027_preds_lora_llama2.jsonl")
     ap.add_argument("--max_new", type=int, default=256)
     args = ap.parse_args()
 
